@@ -1,0 +1,468 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+html{
+    font-size: 75%;
+}
+.header{
+    width: 100%;
+    height: 60vh;
+    background: url(images/background.jpg) no-repeat center center fixed;
+    opacity: 10;
+    background-size: cover;
+    padding: 1% 4%;
+    
+
+
+}
+
+.bi{
+    font-size: 2rem;
+     padding-left: 20px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+
+}
+.bi:hover{
+color: crimson;
+}
+nav{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    width: 150px;
+    padding: 2% 6%;
+}
+nav a{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+nav ul li {
+    padding-left: 18px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul li a{
+    
+    color:rgba(25, 254, 105, 0.745);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    background: rgba(102, 100, 100,.2);
+}
+nav ul a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    color: orange;
+    background-color: orange;
+    background: #f44336;
+    display: block;
+    transition: .5s;
+}
+nav ul li :hover::after{
+    width: 100%;
+
+}
+nav a h2{
+    font-size: 2.3rem;
+    color: crimson;
+    opacity: .9;
+    border-radius: 40px;
+    background-color: rgba(5, 15, 119, 0.522);
+    padding: 10px 20px;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+    margin-bottom: 10px;
+}
+
+.container h1{
+    margin-top: 20px;
+    font-size: 3.2rem;
+    color: black;
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.container .h1::after{
+    content: '';
+    width: 0px;
+    position: relative;
+    top: 0;
+    left: 40%;
+    transition: .5s;
+    
+
+    height: 2px;
+    background-color: orange;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.container .h1:hover::after{
+    content: '';
+    width: 150px;
+    position: relative;
+    top: 0;
+    left: 45%;
+    transition: .5s;
+
+    height: 2px;
+    background-color: orange;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.col-1{
+    flex-basis: 47%;
+    min-width: 250px;
+    min-height: 350px;
+    background-color: rgba(17, 89, 96, 0.09);
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px 2px gray;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.col-2{
+    flex-basis: 47%;
+    min-width: 250px;
+    min-height: 350px;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+}
+.col-2 img{
+    width: 100%;
+    height:100%;
+    background: none;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin: 15px auto;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    color:green;
+}
+.row p{
+    font-size: 1.2rem;
+    display: block;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5ps;
+    line-height: 2rem;
+}
+.col-1 h1{
+    color: lightslategray;
+}
+.footer{
+    background-color:slategray;
+    width: 100%;
+    height: 350px;
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+.small-container{
+    width: 60%;
+    height: fit-content;
+    margin: 50px auto;
+    margin-bottom: 10px;
+    background: url(images/back2.jpg)no-repeat,no-repeat,center;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    border-radius: 10px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    color:green;
+}
+.col-7{
+    flex-basis: 50%;
+    min-width: 250px;
+    min-height: 350px;
+    margin: 15px auto;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.small-container h1{
+    padding-top: 10px;
+    font-size: 3.2rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+.col-7 h1{
+    font-size: 2rem;
+    padding: 1px 2px;
+    text-align:left;
+}
+.col-7 p{
+    display: block;
+    text-align: start;
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+.col-7 span{
+    color: slateblue;
+}
+.footer{
+    background-color:slategray;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0px auto;
+
+}
+
+.col-9{
+    min-width: 250px;
+    flex-basis: 33%;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+.col-9 h1{
+    margin: 20px auto;
+    color: black;
+}
+.col-9 h2{
+    padding-top: 20px;
+}
+.col-9 h1:hover{
+    color:rgb(182, 7, 13);
+    opacity: 1;
+
+}
+.col-9 h2:hover{
+    color: crimson;
+}
+
+
+.login{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -100%;left: 0;
+    z-index: 1000;
+    background-color: blue;
+    opacity: .9;
+}
+.sign-up{
+    width: 40%;
+    height: 60vh;
+    position: relative;
+    top: -120%;left: 30%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 3% 5%;
+    display: block;
+
+}
+.sign-up h1{
+    font-size: 3.2rem;
+    margin-bottom: 4%;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 2% auto;
+    border: 1px solid lightslategray;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    display: block;
+    background: transparent;
+
+}
+.sign-up p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: start;
+}
+.sign-up a{
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    background-color: rgb(204, 15, 100);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 8%;
+}
+.login.active{
+    top: 10%;
+}
+.sign-up.active{
+    top: 20%;
+}
+#list{
+    font-size: 1.5rem;
+    color: crimson;
+}
+#circle{
+    font-size: 1.5rem;
+    color: green;
+}
+
+
+
+.log-in{
+    width: 40%;
+    height: 60vh;
+    position: absolute;
+    top: -120%;left: 30%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 3% 5%;
+    display: block;
+
+}
+.log-in.active{
+    top: 20%;
+}
+.log-in h1{
+    font-size: 3.2rem;
+    margin-bottom: 4%;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 2% auto;
+    border: 1px solid lightslategray;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    display: block;
+    background: transparent;
+
+}
+.log-in p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: start;
+}
+.log-in a{
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    background-color: rgb(204, 15, 100);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 8%;
+}
+.log-in .check{
+    background: none;
+    color: black;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+@media (max-width:750px) {
+    html{
+        font-size: 65%;
+    }
+    nav ul{
+        width: 130px;
+        height: 100vh;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        text-align: center;
+        z-index: 1000;
+       
+    }
+    nav ul li{
+        padding-top:10px ;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        border: 1px solid rgb(102, 100, 100);
+        z-index: 2;
+        border-radius: 10px;
+        background-color: darkgray;
+        margin-right: 2px;
+        z-index: 1000;
+
+    }
+    
+.col-7{
+    flex-basis: 50%;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 5px auto;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.small-container h1{
+    padding-top: px;
+    font-size: 3.2rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.small-container{
+    left: 0;
+    z-index: 0;
+}
+.col-7 h1{
+    font-size: 1.5rem;
+    padding: 1px 2px;
+    text-align:left;
+}
+.col-7 p{
+    display: block;
+    text-align: start;
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+}
